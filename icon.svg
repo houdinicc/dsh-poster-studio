@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" role="img" aria-label="Poster workshop">
+  <defs>
+    <linearGradient id="pst-ico-fluid" x1="14" y1="52" x2="52" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d6bfe"/>
+      <stop offset="0.55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <clipPath id="pst-ico-clip">
+      <rect x="10" y="6" width="44" height="52" rx="9"/>
+    </clipPath>
+  </defs>
+  <rect x="10" y="6" width="44" height="52" rx="9" fill="#080b18"/>
+  <g clip-path="url(#pst-ico-clip)">
+    <path d="M10 41c8-6 13 2 22-1s11-7 22-10v30H10V41Z" fill="url(#pst-ico-fluid)" opacity=".95"/>
+    <path d="M10 48c9-5 14 3 23-1s12-5 21-8v6c-9 3-13 7-22 9s-13-3-22-1v-5Z" fill="url(#pst-ico-fluid)" opacity=".5"/>
+  </g>
+  <rect x="10" y="6" width="44" height="52" rx="9" stroke="currentColor" stroke-width="2.2"/>
+  <rect x="17" y="15" width="23" height="3.6" rx="1.8" fill="currentColor" opacity=".95"/>
+  <rect x="17" y="22.6" width="13" height="3.6" rx="1.8" fill="currentColor" opacity=".62"/>
+</svg>

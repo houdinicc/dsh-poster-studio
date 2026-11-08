@@ -1,0 +1,69 @@
+{
+  "name": "dsh-poster-studio",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Poster workshop for DeepSeek Harness: a left sidebar entry opens a copy/style editor beside a live poster preview with the deepseek.com/harness fluid shader background and Montserrat type; four ratios, four palettes, PNG and SVG export. · DSH 海报工坊：左侧栏入口打开「文案 + 样式」编辑器与实时海报预览，使用官网同款流体 shader 背景与 Montserrat 字体；支持 4 种画幅、4 套配色，可导出 PNG / SVG。",
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "author": "houdinicc",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "poster",
+    "design",
+    "shader",
+    "montserrat",
+    "sidebar"
+  ],
+  "engines": {
+    "node": ">=20.11",
+    "dsh": ">=0.2.0-rc.1 <0.3.0"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "icon.svg",
+    "LICENSE",
+    "README.md",
+    "FONT-LICENSE.txt"
+  ],
+  "scripts": {
+    "test": "node test/manifest.mjs && node test/smoke.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "verify:pack": "node scripts/verify-pack.mjs",
+    "prepack": "node scripts/preflight.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houdinicc/dsh-poster-studio.git"
+  },
+  "homepage": "https://github.com/houdinicc/dsh-poster-studio#readme",
+  "bugs": {
+    "url": "https://github.com/houdinicc/dsh-poster-studio/issues"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

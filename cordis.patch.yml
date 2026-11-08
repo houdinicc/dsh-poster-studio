@@ -1,0 +1,7 @@
+# dsh-poster-studio —— 本 bundle 贡献的配置层。
+#
+# 只插入插件自己的一行。宿主半（lib/index.js）不注册任何资源：界面全部由
+# 客户端半（lib/client.js）通过 sidebar.panellist / main 两个槽位提供。
+- insert:
+    - id: poster-studio
+      name: 'dsh-poster-studio'
